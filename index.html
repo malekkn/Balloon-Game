@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta charset="utf-8">
+    <title>Balloon Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head>
+<body>
+	<div id= "button"><a href="#" onclick="location.reload()">restart</a></div>
+	<!-- <div id= "button"><a href="#" onclick="parentNode.remove(); starting();">start</a></div> -->
+	<p id="counter"></p>
+    <div id = "container">
+    	<div id = "block">
+		    <div id="balloon" onclick="count()">
+		      <div id="inflatable" onclick="parentNode.remove()" ><p>pop me</p></div>
+		      <div id="string"></div>
+		    </div>
+	    </div>
+    </div>
+
+</body>
+<script src="scripts.js"></script>
+</html>

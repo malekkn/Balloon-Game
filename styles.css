@@ -1,0 +1,69 @@
+*{
+	box-sizing: border-box;
+}
+p {
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+}
+body {
+	background-image: url(media/body.png);
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+#block {
+	width: 10%;
+	height: 80%;
+	margin : auto;
+}
+#inflatable {
+	width: 180px;
+	height: 200px;
+	background-color: yellow;
+	border-radius: 50%;
+	border:2px solid orange;
+	font-size: 25px;
+}
+#string {
+	width: 1px;
+	height: 100px;
+	background-color: black;
+	margin-left: 90px;
+}
+#container{
+	display: flex;
+	height: 90vh;
+	align-items: flex-end;
+}
+#balloon{
+	height: 300PX;
+	z-index: 100;
+	text-align: center;
+	margin: 0px 10px;
+	animation-name: loop;
+    animation-duration: 40s;
+    position: relative;
+    animation-iteration-count: 1;
+}
+@keyframes loop {
+   	from    { bottom: -200%;}
+    to      { bottom: 1000%;}
+}
+#balloon:hover {
+  	cursor:  url(http://image.flaticon.com/icons/png/128/64/64473.png) 64 64,auto;
+}
+#counter{
+  	font-size: 45px;
+}
+#button {
+	width: 200px;
+	height: 80px;
+	margin: 15px;
+	background-color: red;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Permanent Marker', cursive;
+
+}
