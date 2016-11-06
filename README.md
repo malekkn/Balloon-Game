@@ -13,3 +13,5 @@ wishlist for future updates:
 
 
 ....:::: the game is under development and your feedback is always welcome ::::....
+
+live on codepen just give it a try : https://codepen.io/malekkn/pen/ENYZMj
