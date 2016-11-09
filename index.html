@@ -9,11 +9,11 @@
 </head>
 <body>
 	<div id= "button"><a href="#" onclick="location.reload()">restart</a></div>
-	<!-- <div id= "button"><a href="#" onclick="parentNode.remove(); starting();">start</a></div> -->
+	<div id= "button"><a href="#" onclick="parentNode.remove(); starting();">start</a></div>
 	<p id="counter"></p>
     <div id = "container">
-    	<div id = "block">
-		    <div id="balloon" onclick="count()">
+    	<div id = "block" class="hide">
+		    <div id="balloon" onclick="count()" >
 		      <div id="inflatable" onclick="parentNode.remove()" ><p>pop me</p></div>
 		      <div id="string"></div>
 		    </div>

@@ -4,16 +4,19 @@
 var data = '{"kills": 0 ,"initial":"GO GO GO!!!","warn":"STOP GLITCHIN BRUH!!","size":10}';
 //converting passed string to JSON Object. 
 var obj = JSON.parse(data);
-
+var myObjects = {};
+var myBalloons = {};
+var index = 0;
 var num = document.getElementById("counter");
 
-num.innerHTML = obj.initial;
+
 
 //clone function to multiply the balloon.
 function repeater () {
   var target = document.getElementById("block");
   var cln = target.cloneNode(true);
   document.getElementById("container").appendChild(cln);
+  myObjects[index++] = cln;
 }
 
 for (var i = 0; i < obj.size -1 ; i ++) {
@@ -24,7 +27,7 @@ for (var i = 0; i < obj.size -1 ; i ++) {
 //counter function 
 function count() {
 	if (obj.kills < 9){
-		obj.kills+=1;
+		obj.kills += 1;
 		num.innerHTML= obj.kills;
 	} else {
   	 	obj.kills = obj.warn;
@@ -33,6 +36,13 @@ function count() {
   	}
 }
 //start button function ---coming soon ---
-// function starting (){
-//  num.innerHTML = obj.initial;
-// }
+function starting (){
+	num.innerHTML = obj.initial;
+	for (var i = 0; i < obj.size -1 ; i ++) {
+   		myObjects[i].className = "move"
+   		document.getElementById("block").className = "move";
+	}
+	
+	num.innerHTML = obj.initial;
+
+}
