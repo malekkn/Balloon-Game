@@ -6,15 +6,17 @@ you have to shoot as many balloons as possible.
 pro TIP : it goes so fast so u gotta be quick.
 
 
-wishlist for future updates:
+Features:
 - start button.
 - selectable difficulty.
+
+wishlist for future updates
 - give the user multiple sizes of the game to select from.
 
 
 ....:::: the game is under development and your feedback is always welcome ::::....
 
-live on codepen just give it a try : https://codepen.io/malekkn/pen/ENYZMj
+live on :  https://malekkn.github.io/balloon-game/
 
 Change log :
 version 0.90 
@@ -28,4 +30,7 @@ version 0.97 :
 -restart button.
 -added difficulties (easy- normal - hard ).
 -make the game kind of responsive.
+
+
+
 
