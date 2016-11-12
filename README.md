@@ -23,13 +23,13 @@ version 0.90
 - initial.
 
 version 0.95 :
--added JSON and commented the JS file.
+- added JSON and commented the JS file.
 
 version 0.97 :
--start button.
--restart button.
--added difficulties (easy- normal - hard ).
--make the game kind of responsive.
+- start button.
+- restart button.
+- added difficulties (easy- normal - hard ).
+- make the game kind of responsive.
 
 
 
