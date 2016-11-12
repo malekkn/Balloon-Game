@@ -6,9 +6,15 @@
     <title>Balloon Game</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="media/icon.ico" />
 </head>
 <body>
-	<div id= "button"><a href="#" onclick="location.reload()">restart</a></div>
+	<div id="wrapper" >
+		<div class= "choice"><a href="#" onclick="location.reload()">restart</a></div>
+		<div id = "easy" class= "choice"><a href="#" onclick="diff(easy)">Easy</a></div>
+		<div id = "normal" class= "choice"><a href="#" onclick="diff(normal)">Normal</a></div>
+		<div id = "hard" class= "choice"><a href="#" onclick="diff(hard)">Hard</a></div>
+	</div>
 	<div id= "button"><a href="#" onclick="parentNode.remove(); starting();">start</a></div>
 	<p id="counter"></p>
     <div id = "container">
@@ -19,7 +25,6 @@
 		    </div>
 	    </div>
     </div>
-
 </body>
 <script src="scripts.js"></script>
 </html>

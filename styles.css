@@ -14,7 +14,7 @@ a {
 }
 #block {
 	width: 10%;
-	height: 80vh;
+	height: 10vh;
 	margin : auto;
 }
 #inflatable {
@@ -33,7 +33,7 @@ a {
 }
 #container{
 	display: flex;
-	height: 90vh;
+	height: 80vh;
 	align-items: flex-end;
 }
 #balloon{
@@ -44,30 +44,65 @@ a {
 }
 
 #balloon:hover {
-  	cursor:  url(http://image.flaticon.com/icons/png/128/64/64473.png) 64 64,auto;
+  	cursor:  url(http://findicons.com/files/icons/2652/gentleface/48/target_icon.png) 24 24,auto;
 }
 #counter{
   	font-size: 45px;
+}
+#wrapper{
+	display: flex;
+	justify-content: center;
+  	width: 100%;
 }
 #button {
 	width: 200px;
 	height: 80px;
 	margin: 15px auto;
-	background-color: red;
+	background-color: #E91E63;
 	border-radius: 10px;
 	text-align: center;
 	font-size: 50px;
 	font-family: 'Permanent Marker', cursive;
-
+}
+.choice {
+  width: 120px;
+  height: 40px;
+  margin: 15px;
+  background-color: #303F9F;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Permanent Marker', cursive;
+}
+.clear:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 .hide{
   display:none;
-
 }
-.move{
+.clicked {
+  background-color: #00897B;
+}
+.hard{
   display: block;
   animation-name: loop;
-  animation-duration: 40s;
+  animation-duration: 20s;
+  position: relative;
+  animation-iteration-count: 1;
+}
+.normal{
+  display: block;
+  animation-name: loop;
+  animation-duration: 30s;
+  position: relative;
+  animation-iteration-count: 1;
+}
+.easy{
+  display: block;
+  animation-name: loop;
+  animation-duration: 50s;
   position: relative;
   animation-iteration-count: 1;
 }

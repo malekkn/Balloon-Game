@@ -8,9 +8,16 @@ var myObjects = {};
 var myBalloons = {};
 var index = 0;
 var num = document.getElementById("counter");
+var difficulty = "normal";
+var normal = "normal";
+var easy = "easy";
+var hard = "hard";
 
 
-
+function diff (x){
+	difficulty = x;
+	document.getElementById(difficulty).className += " clicked";
+}
 //clone function to multiply the balloon.
 function repeater () {
   var target = document.getElementById("block");
@@ -35,12 +42,12 @@ function count() {
   	 	num.innerHTML= obj.kills;
   	}
 }
-//start button function ---coming soon ---
+//start button functions starting + applying difficulty
 function starting (){
 	num.innerHTML = obj.initial;
 	for (var i = 0; i < obj.size -1 ; i ++) {
-   		myObjects[i].className = "move"
-   		document.getElementById("block").className = "move";
+   		myObjects[i].className = difficulty
+   		document.getElementById("block").className = difficulty;
 	}
 	
 	num.innerHTML = obj.initial;
